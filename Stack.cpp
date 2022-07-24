@@ -48,11 +48,17 @@ void Pop(Stack *s){
     size--;
 }
 void Print(Stack *s){
-    cout<<"The Elements in the Stack are: ";
-    for (int i = 0 ; i < size; i++){
-        cout<<s->item[i]<<" ";
+    
+    if(isEmpty(s))
+        cout<<"Stack is Empty!"<<endl;
+    else {
+        cout<<"The Elements in the Stack are: ";
+        for (int i = 0 ; i < size; i++){
+            cout<<s->item[i]<<" ";
+        }
+        cout<<endl;
+        
     }
-    cout<<endl;
 }
 
 int main() {
