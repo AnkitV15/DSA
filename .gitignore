@@ -1,0 +1,8 @@
+# vscode folder
+.vscode/ 
+
+# temp files
+tempCodeRunnerFile.cpp
+
+# exe files
+*.exe
